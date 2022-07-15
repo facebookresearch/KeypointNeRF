@@ -1,0 +1,122 @@
+{
+    "out_dir":                      "./EXPERIMENTS",
+    "expname":                      "zju",
+
+    "dataset": {
+        "max_len": -1,
+        "val_cfg": {
+            "max_len": 2
+        }
+    },
+    "training": {
+        "train_batch_size":         1,
+        "train_num_workers":        4,
+
+        "val_batch_size":           1,
+        "val_num_workers":          2,
+
+        "lr":                       0.0005,
+
+        "model_selection_metric":   "val_total_loss",
+        "model_selection_mode":     "min",
+
+        "max_epochs":               30,
+        "pl_cfg": {
+            "val_check_interval":   0.1
+        }
+    },
+    "models": {
+        "KeypointNeRF": {
+            "ds_geo":  1,
+            "ds_tex":  1,
+            "v_level": 3,
+            "xy_level": -1,
+            "z_level": 4,
+
+            "train_out_h": 64,
+            "train_out_w": 64,
+
+            "sp_args": {
+                "sp_level": 3,
+                "sp_type": "rel_z_decay",
+                "scale": 1.0,
+                "sigma": 0.1,
+                "n_kpt": 24
+            },
+            "geo_args": {
+                "n_stack": 1,
+                "n_downsample": 4,
+                "out_ch": 64,
+                "hd": false
+            },
+            "mlp_geo_args": {
+                "n_dims1": [
+                    9,
+                    128,
+                    128,
+                    120,
+                    64
+                ],
+                "n_dims2": [
+                    128,
+                    64,
+                    64,
+                    2
+                ],
+                "skip_dims": [
+                    64,
+                    8
+                ],
+                "skip_layers": [
+                    0,
+                    2
+                ],
+                "nl_layer": "softplus",
+                "norm": "weight",
+                "pool_types": [
+                    "mean",
+                    "var"
+                ],
+                "dualheads": false
+            },
+            "tex_args": {
+                "ngf": 64,
+                "n_downsample": 3,
+                "n_blocks": 4,
+                "n_upsample": 2,
+                "out_ch": 8,
+                "norm": "instance"
+            },
+            "mlp_tex_args": {
+                "args": {
+                    "in_feat_ch": 32,
+                    "n_samples": 64
+                },
+                "gcompress": {
+                    "in_ch": 128,
+                    "out_ch": 24
+                }
+            },
+            "dr_level": 5,
+            "dr_kwargs": {
+                "fine": true,
+                "uniform": false,
+                "blur": 3,
+                "rand_noise_std": 0.01,
+                "sample_per_ray_c": 64,
+                "sample_per_ray_f": 64
+            },
+            "lambdas": {
+                "lambda_l1_c": 1.0,
+                "lambda_l1": 10.0,
+                "lambda_vgg": 0.5,
+                "lambda_l2": 0.0,
+                "lambda_lp": 0.0,
+                "lambda_ssim": 0.0,
+                "lambda_colab": 0.0,
+                "lambda_aux": 0.1,
+                "lambda_ofs": 0.1
+            }
+        }
+    }
+}
