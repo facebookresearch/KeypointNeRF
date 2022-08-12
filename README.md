@@ -28,6 +28,9 @@
       <img src='https://img.shields.io/badge/KeypointNeRF-Page-orange?style=for-the-badge&logo=Google%20chrome&logoColor=orange' alt='Project Page'>
     <a href="https://youtu.be/RMs1S5k9vrk"><img alt="youtube views" title="Subscribe to my YouTube channel" src="https://img.shields.io/youtube/views/RMs1S5k9vrk?logo=youtube&labelColor=ce4630&style=for-the-badge"/></a>
   </p>
+  <p align="center"><a href='https://paperswithcode.com/sota/generalizable-novel-view-synthesis-on-zju?p=keypointnerf-generalizing-image-based'>
+	<img src='https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/keypointnerf-generalizing-image-based/generalizable-novel-view-synthesis-on-zju' alt='Generalizable Novel View Synthesis'>
+</a></p>
   <p>KeypointNeRF is a generalizable neural radiance field for virtual avatars. Given as input 2-3 images, KeypointNeRF generates volumetric radiance representation that can be rendered from novel views.</p>
 </p>
 
