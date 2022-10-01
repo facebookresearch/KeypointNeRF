@@ -14,7 +14,12 @@
     <a target="_blank" href="http://www-scf.usc.edu/~saitos/"><strong>Shunsuke Saito</strong></a>
   </p>
   <h2 align="center">ECCV 2022</h2>
-  
+  <p>
+  KeypointNeRF leverages human keypoints to instantly generate volumetric radiance representation from 2-3 input images without retraining or fine-tuning.
+  It can represent human faces and full bodies. 
+  </p>
+  <div align="center"></div> <img src="./assets/keynerf.gif" alt="Logo" width="100%">
+ 
   <div align="center"></div> <img src="./assets/teaser.gif" alt="Logo" width="100%">
 
   <p align="center">
@@ -31,7 +36,6 @@
   <p align="center"><a href='https://paperswithcode.com/sota/generalizable-novel-view-synthesis-on-zju?p=keypointnerf-generalizing-image-based'>
 	<img src='https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/keypointnerf-generalizing-image-based/generalizable-novel-view-synthesis-on-zju' alt='Generalizable Novel View Synthesis'>
 </a></p>
-  <p>KeypointNeRF is a generalizable neural radiance field for virtual avatars. Given as input 2-3 images, KeypointNeRF generates volumetric radiance representation that can be rendered from novel views.</p>
 </p>
 
 ## Installation 
