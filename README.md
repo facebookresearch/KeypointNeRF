@@ -34,9 +34,15 @@
     <a href="https://youtu.be/RMs1S5k9vrk"><img alt="youtube views" title="Subscribe to my YouTube channel" src="https://img.shields.io/youtube/views/RMs1S5k9vrk?logo=youtube&labelColor=ce4630&style=for-the-badge"/></a>
   </p>
   <p align="center"><a href='https://paperswithcode.com/sota/generalizable-novel-view-synthesis-on-zju?p=keypointnerf-generalizing-image-based'>
-	<img src='https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/keypointnerf-generalizing-image-based/generalizable-novel-view-synthesis-on-zju' alt='Generalizable Novel View Synthesis'>
-</a></p>
+	<img src='https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/keypointnerf-generalizing-image-based/generalizable-novel-view-synthesis-on-zju' alt='Generalizable Novel View Synthesis'></a>
+    <a href='https://paperswithcode.com/sota/3d-human-reconstruction-on-cape?p=keypointnerf-generalizing-image-based'>
+	<img src='https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/keypointnerf-generalizing-image-based/3d-human-reconstruction-on-cape' alt='Generalizable Novel View Synthesis'></a></p>
+
 </p>
+
+## News :new:
+- [2022/10/01] Combine [ICON](https://github.com/YuliangXiu/ICON) with our relative spatial keypoint encoding for fast and convenient monocular reconstruction, without requiring the expensive SMPL feature. 
+More details are [here](#Reconstruction-from-a-Single-Image). 
 
 ## Installation 
 Please install python dependencies specified in `environment.yml`:
@@ -95,6 +101,22 @@ We compare KeypointNeRF with recent state-of-the-art methods. The evaluation met
 | KeypointNeRF* <font size="1">(Mihajlovic et al., ECCV'22)</font>  |   **25.86** | **91.07**   |
 <p align="left" style="font-size:10px"> (*Note that results of KeypointNeRF are slightly higher compared to the numbers reported in the original paper due to training views not beeing shuffled during training.) </p>
 
+## Reconstruction from a Single Image
+Our relative spatial encoding can be used to reconstruct humans from a single image. 
+As a example, we leverage ICON and replace its expensive SDF feature with our relative spatial encoding. 
+
+<div align="center"><img src="./assets/icon_vs_kpts.png" alt="Logo" width="100%">
+While it achieves comparable quality to ICON, it's much <strong>faster</strong> and more <strong>convinient</strong> to use <span align="left" style="font-size:8px">(*displayed image taken from pinterest.com)</span>.
+</div> 
+
+### 3D Human Reconstruction on CAPE
+| Models  | Chamfer &#8595; (cm)  | P2S &#8595; (cm) |
+|---|---|---|
+| PIFU <font size="1">(Saito et al., ICCV'19)</font>  |   3.573     | 1.483   |
+| ICON <font size="1">(Xiu., CVPR'22)</font>          |   1.424     | 1.351   |
+| KeypointICON <font size="1">(Mihajlovic et al., ECCV'22; Xiu., CVPR'22)</font>  |   1.539	 | 1.358   |
+
+Check the benchmark [here](https://paperswithcode.com/sota/3d-human-reconstruction-on-cape) and more details [here](https://github.com/YuliangXiu/ICON/docs/evaluation.md#benchmark-train-on-thuman20-test-on-cape).
 
 ## Publication
 If you find our code or paper useful, please consider citing:
