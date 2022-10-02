@@ -112,7 +112,7 @@ While it achieves comparable quality to ICON, it's much <strong>faster</strong> 
 ### 3D Human Reconstruction on CAPE
 | Models  | Chamfer &#8595; (cm)  | P2S &#8595; (cm) |
 |---|---|---|
-| PIFU <font size="1">(Saito et al., ICCV'19)</font>  |   3.573     | 1.483   |
+| PIFu <font size="1">(Saito et al., ICCV'19)</font>  |   3.573     | 1.483   |
 | ICON <font size="1">(Xiu et al., CVPR'22)</font>          |   1.424     | 1.351   |
 | KeypointICON <font size="1">(Mihajlovic et al., ECCV'22; Xiu et al., CVPR'22)</font>  |   1.539	 | 1.358   |
 
