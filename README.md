@@ -113,8 +113,8 @@ While it achieves comparable quality to ICON, it's much <strong>faster</strong> 
 | Models  | Chamfer &#8595; (cm)  | P2S &#8595; (cm) |
 |---|---|---|
 | PIFU <font size="1">(Saito et al., ICCV'19)</font>  |   3.573     | 1.483   |
-| ICON <font size="1">(Xiu., CVPR'22)</font>          |   1.424     | 1.351   |
-| KeypointICON <font size="1">(Mihajlovic et al., ECCV'22; Xiu., CVPR'22)</font>  |   1.539	 | 1.358   |
+| ICON <font size="1">(Xiu et al., CVPR'22)</font>          |   1.424     | 1.351   |
+| KeypointICON <font size="1">(Mihajlovic et al., ECCV'22; Xiu et al., CVPR'22)</font>  |   1.539	 | 1.358   |
 
 Check the benchmark [here](https://paperswithcode.com/sota/3d-human-reconstruction-on-cape) and more details [here](https://github.com/YuliangXiu/ICON/docs/evaluation.md#benchmark-train-on-thuman20-test-on-cape).
 
