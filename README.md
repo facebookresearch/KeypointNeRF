@@ -116,7 +116,7 @@ While it achieves comparable quality to ICON, it's much <strong>faster</strong> 
 | ICON <font size="1">(Xiu et al., CVPR'22)</font>          |   1.424     | 1.351   |
 | KeypointICON <font size="1">(Mihajlovic et al., ECCV'22; Xiu et al., CVPR'22)</font>  |   1.539	 | 1.358   |
 
-Check the benchmark [here](https://paperswithcode.com/sota/3d-human-reconstruction-on-cape) and more details [here](https://github.com/YuliangXiu/ICON/docs/evaluation.md#benchmark-train-on-thuman20-test-on-cape).
+Check the benchmark [here](https://paperswithcode.com/sota/3d-human-reconstruction-on-cape) and more details [here](https://github.com/YuliangXiu/ICON/blob/master/docs/evaluation.md).
 
 ## Publication
 If you find our code or paper useful, please consider citing:
