@@ -926,6 +926,7 @@ class KeypointNeRF(torch.nn.Module):
                         continue
                     if len(v.shape) == 3:
                         v = v[:, None]
+                    v = v.detach().cpu()
                     if k in ret:
                         ret[k].append(v)
                     else:
