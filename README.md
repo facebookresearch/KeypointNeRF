@@ -11,7 +11,7 @@
     .
     <a target="_blank" href="https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html"><strong>Siyu Tang</strong></a>
     ·
-    <a target="_blank" href="http://www-scf.usc.edu/~saitos/"><strong>Shunsuke Saito</strong></a>
+    <a target="_blank" href="https://shunsukesaito.github.io/"><strong>Shunsuke Saito</strong></a>
   </p>
   <h2 align="center">ECCV 2022</h2>
   <p>
